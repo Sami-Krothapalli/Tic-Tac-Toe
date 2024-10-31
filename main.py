@@ -20,17 +20,9 @@ def board_display():
     print(board[6] + "|" + board[7] + "|" + board[8] + "|") 
 
 def handle_turn(player):
-    name_pos = input("Are you X or O (respond w/ X or O): ")
-    pos = input("Choose a position from 1 to 9:  ")
-    
-    if name_pos == "X":
-        board[int(pos) - 1] = "X"
-        board_display()
-    else:
-        board[int(pos) - 1] = "O"
-        board_display()     
-        
-    
+    pos = input("Choose a position from 1 to 9:  ")m
+    board[int(pos) - 1] = "X"
+    board_display()
     
 
 def check_if_game_over():
@@ -41,7 +33,7 @@ def check_if_win():
     #Check Rows
     #Check Cols
     #Check Diags
-
+    return 
 
 def check_if_tie():
     return
