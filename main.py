@@ -2,10 +2,16 @@
 # Display Board
 # Play Game
 
-
+# Global Variables
 board = ["-", "-", "-", 
          "-", "-", "-", 
          "-", "-", "-",]
+
+game_still_going = True
+
+winner = None
+
+curr_player = "X"
 
 
 def board_display():
@@ -13,7 +19,7 @@ def board_display():
     print(board[3] + "|" + board[4] + "|" + board[5] + "|")
     print(board[6] + "|" + board[7] + "|" + board[8] + "|") 
 
-def handle_turn():
+def handle_turn(player):
     name_pos = input("Are you X or O (respond w/ X or O): ")
     pos = input("Choose a position from 1 to 9:  ")
     
@@ -32,12 +38,9 @@ def check_if_game_over():
     check_if_tie()
 
 def check_if_win():
-    for rows in range(9):
-        for cols in range(4):
-            if board[rows] == board[rows + 1] and board[rows] == board[rows + 2] and board[rows + 1] == board[rows + 2]:
-                print("Game Over")
-            elif board[rows][cols] == board[rows][cols + 1] and board[rows][cols] == board[rows][cols + 2] and board[rows][cols + 1] == board[rows][cols + 2]:
-                print("Game Over")
+    #Check Rows
+    #Check Cols
+    #Check Diags
 
 
 def check_if_tie():
