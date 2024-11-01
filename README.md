@@ -47,6 +47,7 @@ each move, and announces the winner or a tie at the end.
 
 ### Example
 
+```
 - | - | -
 - | - | -
 - | - | -
@@ -57,3 +58,5 @@ Choose a position from 1-9: 5
 - | - | -
 - | X | -
 - | - | -
+
+```
